@@ -13,30 +13,33 @@ notifications → Notification manager object
 Window
 ```lua
 local window = library:window({
-name = <sting> -- window name
+  name = <sting> -- window name
 })
 ```
 
+Field	Type	Description
+name	<string>	Title of the window.
 
 
 Notifications
 ```lua
 notifications:create_notification({
-name = <string> -- notification text
+  name = <string> -- notification text
 })
 ```
+Field	Type	Description
+name	<string>	Text to display.
+
 
 Tabs
 ```lua
 local tab = window:tab({
-name = <string> -- 
+  name = <string> -- 
 })
 ```
 
 Field	Type	Description
 name	<string>	Tab’s display name.
-
-Returns: tab object
 
 Columns
 ```lua
@@ -47,9 +50,9 @@ local column = tab:column({})
 Sections
 ```lua
 local section = column:section({
-name = <string>,
-auto_fill = <boolean>,
-size = <number>
+  name = <string>,
+  auto_fill = <boolean>,
+  size = <number>
 })
 ```
 
@@ -57,8 +60,8 @@ Creates a toggle switch.
 
 ```lua
 section:toggle({
-name = <string>,
-flag = <string>
+  name = <string>,
+  flag = <string>
 })
 ```
 
@@ -71,7 +74,7 @@ flag	<string>	Internal flag name.
 Keybind
 ```lua
 section:keybind({
-name = <string>
+  name = <string>
 })
 ```
 
@@ -83,12 +86,12 @@ Returns: keybind object
 Sliders
 ```lua
 section:slider({
-name = <string>,
-min = <number>,
-max = <number>,
-default = <number>,
-interval = <number>,
-suffix = <string>
+  name = <string>,
+  min = <number>,
+  max = <number>,
+  default = <number>,
+  interval = <number>,
+  suffix = <string>
 })
 ```
 
@@ -104,10 +107,10 @@ suffix	<string>	Text suffix (e.g. %, px).
 Dropdown
 ```lua
 section:dropdown({
-name = <string>,
-flag = <string>,
-items = {<string>, <string>},
-default = <string>
+  name = <string>,
+  flag = <string>,
+  items = {<string>, <string>},
+  default = <string>
 })
 ```
 
@@ -122,8 +125,8 @@ default	<string>	Default selected item.
 Button
 ```lua
 section:button({
-name = <string>,
-callback = <function>
+  name = <string>,
+  callback = <function>
 })
 ```
 
