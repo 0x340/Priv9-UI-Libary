@@ -16,7 +16,7 @@ library → Main UI library object
 
 notifications → Notification manager object
 
-Window
+## Window
 ```lua
 local window = library:window({
   name = <sting> -- window name
@@ -27,7 +27,7 @@ Field	Type	Description
 name	<string>	Title of the window.
 
 
-Notifications
+## Notifications
 ```lua
 notifications:create_notification({
   name = <string> -- notification text
@@ -37,7 +37,7 @@ Field	Type	Description
 name	<string>	Text to display.
 
 
-Tabs
+## Tabs
 ```lua
 local tab = window:tab({
   name = <string> -- 
@@ -47,13 +47,13 @@ local tab = window:tab({
 Field	Type	Description
 name	<string>	Tab’s display name.
 
-Columns
+## Columns
 ```lua
 local column = tab:column({})
 ```
 
 
-Sections
+## Sections
 ```lua
 local section = column:section({
   name = <string>,
@@ -64,6 +64,7 @@ local section = column:section({
 
 Creates a toggle switch.
 
+## Toggle
 ```lua
 section:toggle({
   name = <string>,
@@ -77,7 +78,7 @@ flag	<string>	Internal flag name.
 
 
 
-Keybind
+## Keybind
 ```lua
 section:keybind({
   name = <string>
@@ -89,7 +90,7 @@ name	<string>	Label for keybind.
 
 Returns: keybind object
 
-Sliders
+## Sliders
 ```lua
 section:slider({
   name = <string>,
@@ -110,7 +111,7 @@ interval	<number>	Step interval.
 suffix	<string>	Text suffix (e.g. %, px).
 
 
-Dropdown
+## Dropdown
 ```lua
 section:dropdown({
   name = <string>,
@@ -128,7 +129,7 @@ default	<string>	Default selected item.
 
 
 
-Button
+## Button
 ```lua
 section:button({
   name = <string>,
@@ -142,7 +143,7 @@ callback	<function>	Function called on click.
 
 
 
-Config
+## Config
 ```lua
 library:init_config(window)
 ```
