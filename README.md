@@ -1,4 +1,8 @@
 ## How 2 Use
+
+![Preview](assets/priv9.png)
+
+
 Loading the Library
 
 ```lua
