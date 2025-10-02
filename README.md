@@ -10,43 +10,26 @@ library → Main UI library object
 
 notifications → Notification manager object
 
-🪟 Window
-
-Creates a new window.
-
+Window
 ```lua
 local window = library:window({
-name = <string>
+name = <sting> -- window name
 })
 ```
 
-Field	Type	Description
-name	<string>	Title of the window.
 
-Returns: window object
 
-🔔 Notifications
-
-Creates a notification.
-
+Notifications
 ```lua
 notifications:create_notification({
-name = <string>
+name = <string> -- notification text
 })
 ```
 
-Field	Type	Description
-name	<string>	Text to display.
-
-Returns: nil
-
-📑 Tabs
-
-Adds a tab to the window.
-
+Tabs
 ```lua
 local tab = window:tab({
-name = <string>
+name = <string> -- 
 })
 ```
 
@@ -55,23 +38,13 @@ name	<string>	Tab’s display name.
 
 Returns: tab object
 
-🧱 Columns
-
-Adds a column inside a tab.
-
+Columns
 ```lua
 local column = tab:column({})
 ```
 
-Field	Type	Description
-(none required)	–	Creates a column container.
 
-Returns: column object
-
-📦 Sections
-
-Adds a section inside a column.
-
+Sections
 ```lua
 local section = column:section({
 name = <string>,
@@ -79,15 +52,6 @@ auto_fill = <boolean>,
 size = <number>
 })
 ```
-
-Field	Type	Description
-name	<string>	Section title.
-auto_fill	<boolean>	Auto-fill remaining space.
-size	<number>	Section size ratio (0–1).
-
-Returns: section object
-
-✅ Toggles
 
 Creates a toggle switch.
 
@@ -102,12 +66,9 @@ Field	Type	Description
 name	<string>	Toggle’s label.
 flag	<string>	Internal flag name.
 
-Returns: toggle object
 
-⌨️ Keybind
 
-Creates a keybind selector.
-
+Keybind
 ```lua
 section:keybind({
 name = <string>
@@ -119,10 +80,7 @@ name	<string>	Label for keybind.
 
 Returns: keybind object
 
-🎚️ Sliders
-
-Creates a slider control.
-
+Sliders
 ```lua
 section:slider({
 name = <string>,
@@ -142,12 +100,8 @@ default	<number>	Default value.
 interval	<number>	Step interval.
 suffix	<string>	Text suffix (e.g. %, px).
 
-Returns: slider object
 
-📜 Dropdown
-
-Creates a dropdown selector.
-
+Dropdown
 ```lua
 section:dropdown({
 name = <string>,
@@ -163,12 +117,9 @@ flag	<string>	Internal flag name.
 items	<table>	List of <string> items.
 default	<string>	Default selected item.
 
-Returns: dropdown object
 
-🖲️ Button
 
-Creates a clickable button.
-
+Button
 ```lua
 section:button({
 name = <string>,
@@ -180,12 +131,9 @@ Field	Type	Description
 name	<string>	Button text.
 callback	<function>	Function called on click.
 
-Returns: button object
 
-⚙️ Config
 
-Initializes configuration saving/loading for the specified window.
-
+Config
 ```lua
 library:init_config(window)
 ```
