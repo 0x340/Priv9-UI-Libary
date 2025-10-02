@@ -1,5 +1,5 @@
 ## How 2 Use
-📥 Loading the Library
+Loading the Library
 
 ```lua
 local library, notifications = loadstring(game:HttpGet("https://raw.githubusercontent.com/i77lhm/Libraries/refs/heads/main/Priv9/Library.lua"))(
