@@ -11,8 +11,7 @@ as well as to serve as a place for potential improvements in the future.
 ## Loading the Library
 
 ```lua
-local library, notifications = loadstring(game:HttpGet("https://raw.githubusercontent.com/i77lhm/Libraries/refs/heads/main/Priv9/Library.lua"))(
-)
+local library, notifications = loadstring(game:HttpGet("https://raw.githubusercontent.com/i77lhm/Libraries/refs/heads/main/Priv9/Library.lua"))()
 ```
 
 library → Main UI library object
