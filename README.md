@@ -1,5 +1,8 @@
 ## How 2 Use
 
+This library was not created by me, and I do not claim any credit for its development.
+This repository exists to provide usage instructions and documentation,
+as well as to serve as a place for potential improvements in the future.
 
 # Preview:
 ![Preview](assets/priv9.png)
