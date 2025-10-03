@@ -47,8 +47,6 @@ local tab = window:tab({
 })
 ```
 
-Field	Type	Description
-name	<string>	Tab’s display name.
 
 ## Columns
 ```lua
@@ -65,7 +63,6 @@ local section = column:section({
 })
 ```
 
-Creates a toggle switch.
 
 ## Toggle
 ```lua
@@ -75,12 +72,6 @@ section:toggle({
 })
 ```
 
-Field	Type	Description
-name	<string>	Toggle’s label.
-flag	<string>	Internal flag name.
-
-
-
 ## Keybind
 ```lua
 section:keybind({
@@ -88,10 +79,6 @@ section:keybind({
 })
 ```
 
-Field	Type	Description
-name	<string>	Label for keybind.
-
-Returns: keybind object
 
 ## Sliders
 ```lua
@@ -105,14 +92,6 @@ section:slider({
 })
 ```
 
-Field	Type	Description
-name	<string>	Label for slider.
-min	<number>	Minimum value.
-max	<number>	Maximum value.
-default	<number>	Default value.
-interval	<number>	Step interval.
-suffix	<string>	Text suffix (e.g. %, px).
-
 
 ## Dropdown
 ```lua
@@ -124,13 +103,6 @@ section:dropdown({
 })
 ```
 
-Field	Type	Description
-name	<string>	Label for dropdown.
-flag	<string>	Internal flag name.
-items	<table>	List of <string> items.
-default	<string>	Default selected item.
-
-
 
 ## Button
 ```lua
@@ -139,11 +111,6 @@ section:button({
   callback = <function>
 })
 ```
-
-Field	Type	Description
-name	<string>	Button text.
-callback	<function>	Function called on click.
-
 
 
 ## Config
