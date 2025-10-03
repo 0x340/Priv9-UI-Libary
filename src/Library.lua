@@ -215,12 +215,12 @@
             
             local ProggyTiny = Register_Font("Tahoma", 200, "Normal", {
                 Id = "Tahoma.ttf",
-                Font = game:HttpGet("https://github.com/i77lhm/storage/raw/refs/heads/main/fonts/tahoma_bold.ttf"),
+                Font = game:HttpGet("https://raw.githubusercontent.com/0x340/Priv9-UI-Libary/main/fonts/tahoma_bold.ttf"),
             })
 
             local ProggyClean = Register_Font("ProggyClean", 200, "normal", {
                 Id = "ProggyClean.ttf",
-                Font = game:HttpGet("https://github.com/i77lhm/storage/raw/refs/heads/main/fonts/ProggyClean.ttf")
+                Font = game:HttpGet("https://raw.githubusercontent.com/0x340/Priv9-UI-Libary/main/fonts/ProggyClean.ttf")
             })
             
             fonts = {
