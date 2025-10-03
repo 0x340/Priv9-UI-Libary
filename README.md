@@ -8,7 +8,7 @@ as well as to serve as a place for potential improvements in the future.
 ![Preview](assets/priv9.png)
 
 
-Loading the Library
+## Loading the Library
 
 ```lua
 local library, notifications = loadstring(game:HttpGet("https://raw.githubusercontent.com/i77lhm/Libraries/refs/heads/main/Priv9/Library.lua"))(
