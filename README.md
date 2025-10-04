@@ -60,6 +60,8 @@ local section = column:section({
   name = <string>,
   auto_fill = <boolean>,
   size = <number>
+
+  callback = function()
 })
 ```
 
@@ -69,6 +71,8 @@ local section = column:section({
 section:toggle({
   name = <string>,
   flag = <string>
+
+  callback = function()
 })
 ```
 
@@ -76,6 +80,8 @@ section:toggle({
 ```lua
 section:keybind({
   name = <string>
+
+  callback = function()
 })
 ```
 
@@ -89,6 +95,8 @@ section:slider({
   default = <number>,
   interval = <number>,
   suffix = <string>
+
+  callback = function()
 })
 ```
 
@@ -100,6 +108,18 @@ section:dropdown({
   flag = <string>,
   items = {<string>, <string>},
   default = <string>
+
+  callback = function()
+})
+```
+
+
+## ColorPicker
+```lua
+section:colorpicker({
+  name = <string>,
+
+  callback = function()
 })
 ```
 
@@ -108,6 +128,7 @@ section:dropdown({
 ```lua
 section:button({
   name = <string>,
+
   callback = <function>
 })
 ```
