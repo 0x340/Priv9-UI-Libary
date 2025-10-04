@@ -141,8 +141,3 @@ section:button({
 ```lua
 library:init_config(window)
 ```
-
-Argument	Type	Description
-window	<window>	The window to configure.
-
-Returns: nil
