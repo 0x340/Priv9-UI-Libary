@@ -118,6 +118,9 @@ section:dropdown({
 ```lua
 section:colorpicker({
   name = <string>,
+  color = Color3.fromRGB(255, 0, 0),
+  alpha = <value>,
+  flag = "color_picker",
 
   callback = function()
 })
